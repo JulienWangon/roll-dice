@@ -1,10 +1,51 @@
+<!DOCTYPE html>
+<html>
 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/75539a80d7.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <header>
+      <div class="new_area">
+      <button id="startGame" class="btn btn-outline-primary " data-bs-toggle="modal" href="#exampleModalToggle" role="button">New Game</button>
+    </div>
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="Name-choice">Choose your name</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default">Player 1</span>
+              <input type="text" class="form-control" id="name01" aria-label="Username" placeholder="Username" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default">Player 2</span>
+              <input type="text" class="form-control" id="name02" aria-label="Username" placeholder="Username" aria-describedby="inputGroup-sizing-default">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-outline-primary" id="toss" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">heads or tails
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
       <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content id="heads_tails_modal">
             <div class="modal-header">
               <h1 class="modal-title fs-5" id="tossTitle">Player 1 Choose heads or tails</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">                </button>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <div class = "btn_choice">
