@@ -12,6 +12,7 @@
   <title>Document</title>
 </head>
 <body>
+  
   <header>
     <h1>Roll Dice</h1>
     <div class="new_area">
@@ -114,6 +115,7 @@
       </div>
     </div>
   </header>
+
   <main>
     <div class="game-area">
       <div class="player_area area1" id="player1_area">
@@ -133,7 +135,23 @@
            <i class="fa-solid fa-circle current_player " id="current_player1"></i> 
         </div>
       </div>
+      <div class="dice_area">
+        <div class="dice">
+          <img src="/img/Dice1.svg" class="dice_img" id="dice_img" alt="image montrant la face du dé">
+        </div>
+        <div class=play_btn>
+          <div class="roll_btn" >
+            <i class="fa-solid fa-arrows-rotate" id="rolling"></i>
+            <span class="roll_text">ROLL DICE</span>
+          </div>
+          <div class="hold_btn">
+            <i class="fa-regular fa-square-caret-down" id="holding"></i>
+            <span class="hold_text">HOLD</span>
+          </div> 
+        </div>
+      </div>
     </div>
+   
   </main>
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
