@@ -13,8 +13,13 @@
 </head>
 <body>
 
+<!-- Header start -->
+
   <header>
     <h1>Roll Dice</h1>
+
+<!-- modal windows: player choose their name -->
+
     <div class="new_area">
       <button id="startGame" class="btn btn-outline-primary " data-bs-toggle="modal" href="#exampleModalToggle" role="button">New Game</button>
       <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
@@ -41,6 +46,9 @@
           </div>
         </div>
       </div>
+
+<!-- modale window: heads or tails game -->
+
       <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content id="heads_tails_modal">
@@ -72,6 +80,9 @@
         </div>
       </div>
     </div>
+
+<!-- modale windows : game rule's for noobs -->    
+
     <div class="rules_btn">
       <button type="button" class="btn rules_btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         Rules
@@ -116,8 +127,13 @@
     </div>
   </header>
 
+<!-- Header Ends -->
+<!-- Main start -->
+
   <main>
     <div class="game-area">
+
+<!-- Player 1 Area -->      
 
       <div class="player_area area1" id="player1_area">
         <div class="player1">
@@ -137,6 +153,8 @@
         </div>
       </div>
 
+<!-- Dice Area -->
+
       <div class="dice_area">
         <div class="dice">
           <img src="/img/Dice1.svg" class="dice_img" id="dice_img" alt="image montrant la face du dé">
@@ -152,6 +170,8 @@
           </div> 
         </div>
       </div>
+
+<!-- Player 2 Area -->
 
       <div class="player_area area2" id="player2_area">
         <div class="player2">
@@ -172,7 +192,7 @@
       </div>  
 
     </div>
-   
+    
   </main>
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
